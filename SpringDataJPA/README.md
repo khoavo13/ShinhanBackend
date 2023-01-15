@@ -3,9 +3,8 @@
 - Spring Data JPA giúp 1 số công việc nhẹ nhàng hơn, tránh lặp lại code thừa thải (do 1 entity có nhiều phương thức, câu lệnh lặp lại), cung cấp một số phương thức để đỡ viết code ở tầng Repository và hỗ trợ viết CRUD dễ dàng hơn. Spring Data JPA hỗ trợ triển khai, lúc mà build tạo ra triển khai interface, lúc đó mới code SQL được.
 
 ### SPRING DATA WORK FLOW
-![Tên ảnh] (https://terasolunaorg.github.io/guideline/5.1.0.RELEASE/en/_images/dataaccess_jpa.png)
-
-1.Gọi phương thức của Repository interface. Entity object, Entity ID, … được truyền dưới dạng tham số gọi phương thức. Các thực thể được thông qua cũng có thể là một giá trị nguyên thủy. 
+![topdev](https://topdev.vn)
+1. Gọi phương thức của Repository interface. Entity object, Entity ID, … được truyền dưới dạng tham số gọi phương thức. Các thực thể được thông qua cũng có thể là một giá trị nguyên thủy. 
 
 2. Proxy class thực hiện động Repository interface ủy quyền xử lý đến org.springframework.data.jpa.repository.support.simplejparepository và custom Repository class. Các tham số được chỉ định bởi Service được truyền vào. 
 
