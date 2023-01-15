@@ -2,6 +2,8 @@
 - Hibernate làm việc thực sự, nó mapping giữa Java và Database nhưng dựa vào nguyên tắc mapping của JPA.
 - Spring Data JPA giúp 1 số công việc nhẹ nhàng hơn, tránh lặp lại code thừa thải (do 1 entity có nhiều phương thức, câu lệnh lặp lại), cung cấp một số phương thức để đỡ viết code ở tầng Repository và hỗ trợ viết CRUD dễ dàng hơn. Spring Data JPA hỗ trợ triển khai, lúc mà build tạo ra triển khai interface, lúc đó mới code SQL được.
 
+![](https://terasolunaorg.github.io/guideline/5.1.0.RELEASE/en/_images/dataaccess_jpa.png)
+
 ### SPRING DATA WORK FLOW
 
 1. Gọi phương thức của Repository interface. Entity object, Entity ID, … được truyền dưới dạng tham số gọi phương thức. Các thực thể được thông qua cũng có thể là một giá trị nguyên thủy. 
